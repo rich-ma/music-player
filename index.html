@@ -12,4 +12,35 @@
 <script src="app.js"></script>
 <script type="text/babel">
   // React code goes here.
+  function OurFirstComponent(){
+    return (
+      //code that represents the UI elements goes here
+      <h1>Hi I am the child!</h1>
+    );
+  } // functional component
+
+  class Container extends React.Component{
+    render(){
+      return(
+        <div>
+      )
+    }
+  }
+
+  // function Container(){
+  //   return(
+  //     <div>
+  //       <h1>I am the parent</h1>
+  //       <OurFirstComponent />
+  //     </div>
+  //   );
+  // }
+  const placeWeWantToPutComponent = document.getElementById('hook');
+  ReactDOM.render(<Container />, placeWeWantToPutComponent);
+  //this is prefered, invoke your components like youre writing HTML
+  // ReactDOM.render(OurFirstComponent(), placeWeWantToPutComponent); is not prefered
+
+
+  
+
 </script>
